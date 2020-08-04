@@ -1,0 +1,347 @@
+body, html{
+  display:grid;
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  box-sizing:border-box;
+}
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+    opacity:0.8;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.pimg1{
+	background-image:url(../imagenes/Tech2.jpg);
+	/* min-height:100%; */
+	height:750px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+.pimg2{
+	background-position: center;
+	background-image:url(../imagenes/Logistics2.jpg);
+	height:500px;
+}
+
+.pimg3{
+	position: relative;
+	height:500px;
+	background-image:url(../imagenes/hobbie1.jpg);
+}
+.pimg4{
+	position: relative;
+    opacity:0.80;
+	
+	display:flex;
+	background-color:#000;
+	flex-direction:column;
+	justify-content:flex-start;
+	height:200px;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  background-color:#111;
+  /* border:10px solid red; */
+}
+.pimg4 .ptext{
+	position:absolute;
+	top:0;
+	height:5em;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+/* 	position:relative;
+	top:30px; */
+}
+.pimg1 .ptext{
+	height:5em;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+/* 	position:relative;
+	top:30px; */
+}
+.ptext .border{
+  background-color:#000;
+  color:#fff;
+  padding:20px;
+}
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  /* display:grid; */
+  background-color:#282e34;
+  /* background-color:#fff; */
+  color:#ddd;
+}
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+.logo{
+	display:flex;
+	width:60%;
+	/* border:10px solid lightblue;  */
+	align-items:center;
+	justify-content:center;
+	margin-bottom:250px;
+}
+
+.imag{
+	width:20%;
+	/* border:10px solid green; */
+}
+
+.referencias{
+	font-size:60%;
+	background:#fff;
+}
+
+.listas{
+	list-style-image:url(../imagenes/list2.png);
+	text-align:left;
+	background-position:center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+.seccioncompleta{
+	display:flex;
+	align-items:center;
+}
+.logo1{
+	width:30%;
+	padding:0;
+}
+.encuadreseccion{
+	font-size:1.2em;
+	width:70%;
+}
+.imag1{
+	width:75%;
+	padding:0;
+	border-radius:50%;
+	margin:auto;
+	filter:opacity(1);
+}
+.galeria-grid{
+	display:grid;
+	grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+	grid-auto-rows:minmax(200px,auto);
+	gap:20px;
+	padding:20px;
+	/* border:2px solid #ddd; */
+	border-radius:30px;
+	grid-auto-flow:dense;
+}
+.galeria-grid__item{
+	display:flex;
+	border-radius:30px;
+	
+	align-items:center;
+	justify-content:center;
+	
+	background-size:cover;
+	background-position:left;
+	background-repeat:no-repeat;
+	filter:brightness(.8);
+	transition:background-position 1s;
+	transition-property: border-radius;
+}
+
+.galeria-grid__item:hover{
+	background-position:right;
+	border-radius:50%;
+	filter:none;
+}
+.imag1:hover{
+	filter:opacity(0.8);
+}
+.encuadreseccion:hover{
+	/* font-size:1em; */
+	color:#2980B9;
+}
+.list__item:hover{
+	font-size:2em;
+}
+figcaption{
+	color:#fff;
+	filter:none;
+	font-size:2em;
+	position:absolute;
+	/* top:0; */
+	font-family: 'Staatliches', cursive;
+	font-style:italic;
+}
+.black{
+	color:#212F3C;
+}
+.bottom{
+	bottom:0;
+}
+.topo{
+	top:0;
+}
+.galeria-grid__item:nth-child(1){
+	background-image:url(../imagenes/gamer.jpg);
+	
+}
+.galeria-grid__item:nth-child(2){
+	background-image:url(../imagenes/img3.jpg);
+}
+.galeria-grid__item:nth-child(3){
+	background-image:url(../imagenes/dbz.jpg);
+}
+.galeria-grid__item:nth-child(4){
+	background-image:url(../imagenes/entre.jpg);
+}
+.galeria-grid__item:nth-child(5){
+	background-image:url(../imagenes/TBT.jpg);
+}
+.galeria-grid__item:nth-child(6){
+	background-image:url(../imagenes/naruto.jpg);
+}
+.galeria-grid__item:nth-child(7){
+	background-image:url(../imagenes/imagen5.png);
+}
+.galeria-grid__item:nth-child(8){
+	background-image:url(../imagenes/reviewsmart.jpg);
+}
+.galeria-grid__item:nth-child(9){
+	background-image:url(../imagenes/imagen6.jpg);
+}
+.galeria-grid__item:nth-child(10){
+	background-image:url(../imagenes/dashboard2.png);
+	background-position:top center;
+}
+.galeria-grid__item:nth-child(11){
+	background-image:url(../imagenes/datascience.jpg);
+}
+.galeria-grid__item:nth-child(12){
+	background-image:url(../imagenes/datascience3.png);
+	background-position:left center;
+}
+.menu{
+	display:flex;
+	/* background-color:#BFC9CA; */
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:85%;
+	/* border:2px solid black; */
+}
+.nave{
+	display:flex;
+	/* background-color:#2980B9; */
+	background: linear-gradient(to right, #314755, #26a0da);
+	font-family: 'Staatliches', cursive;
+	font-size:1.5em;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	width:100%;
+	height:6%;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	/* filter:opacity(0.4); */
+	position:fixed;
+	z-index:10;
+	bottom:0;
+}
+.brand{
+	display:flex;
+	width:5%;
+	justify-content:center;
+	align-items:center;
+	/* border:1px solid red; */
+}
+.brand__logo{
+	width:48%;
+	opacity:1;
+	border:1px double #fff;
+	border-radius:7px;
+}
+.links{
+	display:flex;
+	height:1.5em;
+	margin-left:80px;
+	border-left:5px solid #fff;
+	border-right:5px solid #fff;
+	align-items:center;
+	/* border:1px solid lightblue; */
+}
+.links a{
+	padding:8px 12px;
+	color:#fff;
+	text-decoration:none;
+}
+.links a:hover{
+	border-radius:5px;
+	background-color:#21618C;
+	text-decoration:underline;
+}
+.nick span{
+	color:#fff;
+}
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:#fff;
+  width:100%;
+  /* border:1px solid red; */
+}
+.fa:hover{
+	transform:scale(1.3);
+}
+.socialnet{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	/* border:1px solid yellow; */
+	background-color:#125688;
+	/* background-color:#fff; */
+	width:80px;
+	height:1.9em;
+	margin-left:80px;
+}
+@media (min-width:800px) {
+	.wide{
+	  grid-column: span 2;
+	}
+
+	.tall{
+	  grid-row: span 2;
+	}
+
+}
+
