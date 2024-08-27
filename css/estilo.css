@@ -249,6 +249,10 @@ figcaption{
 	background-image:url(../imagenes/datascience3.png);
 	background-position:left center;
 }
+.galeria-grid__item:nth-child(13){
+	background-image:url(../imagenes/Pokedex_Dashboard.PNG);
+	background-position:center;
+}
 .menu{
 	display:flex;
 	/* background-color:#BFC9CA; */
